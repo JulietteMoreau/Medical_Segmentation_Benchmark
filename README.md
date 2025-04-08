@@ -1,4 +1,4 @@
-# Medical_Segmentation_Benchmark
+# Medical Segmentation Benchmark
 
 Five deep learning segmentation architectures, initially designed for stroke lesion segmentation. 
 Based on 3D or 2D images.
