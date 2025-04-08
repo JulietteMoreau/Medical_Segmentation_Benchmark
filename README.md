@@ -7,9 +7,9 @@ Based on 3D or 2D images.
 
 The data shall be organized as the following tree to use the different codes. Folders 2D and 3D may not be in the same folder.
 
-```
-<pre> data/ ├── 2D/ │ ├── image/ │ │ ├── train/ │ │ │ └── img1.jpg │ │ ├── validation/ │ │ │ └── img2.jpg │ │ └── test/ │ │ └── img3.jpg │ └── reference/ │ ├── train/ │ │ └── img1.png │ ├── validation/ │ │ └── img2.png │ └── test/ │ └── img3.png ├── 3D/ │ ├── image/ │ │ ├── train/ │ │ │ └── img1.nii.gz │ │ ├── validation/ │ │ │ └── img2.nii.gz │ │ └── test/ │ │ └── img3.nii.gz │ └── reference/ │ ├── train/ │ │ └── img1.nii.gz │ ├── validation/ │ │ └── img2.nii.gz │ └── test/ │ └── img3.nii.gz </pre>
-```
+
+<pre> ```bash data/ ├── 2D/ │ ├── image/ │ │ ├── train/ │ │ │ └── img1.jpg │ │ ├── validation/ │ │ │ └── img2.jpg │ │ └── test/ │ │ └── img3.jpg │ └── reference/ │ ├── train/ │ │ └── img1.png │ ├── validation/ │ │ └── img2.png │ └── test/ │ └── img3.png ├── 3D/ │ ├── image/ │ │ ├── train/ │ │ │ └── img1.nii.gz │ │ ├── validation/ │ │ │ └── img2.nii.gz │ │ └── test/ │ │ └── img3.nii.gz │ └── reference/ │ ├── train/ │ │ └── img1.nii.gz │ ├── validation/ │ │ └── img2.nii.gz │ └── test/ │ └── img3.nii.gz ``` </pre>
+
 
 The 2D slices are produced from the 3D images thanks to [med2image](https://github.com/FNNDSC/med2image) and the following code lines.
 
