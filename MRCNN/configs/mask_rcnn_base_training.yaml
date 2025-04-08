@@ -1,0 +1,28 @@
+_BASE_: "Base-RCNN.yaml"
+MODEL:
+  WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+  MASK_ON: True
+  RESNETS:
+    DEPTH: 50
+  ROI_HEADS:
+    NUM_CLASSES: 1
+  ROI_BOX_HEAD:
+    FED_LOSS_NUM_CLASSES: 1
+  SEM_SEG_HEAD:
+    NUM_CLASSES: 1
+  RETINANET:
+    NUM_CLASSES: 1
+SOLVER:
+  STEPS: (500000, 600000) #adapt to the number of images to set the umber of epochs
+  MAX_ITER: 58300
+INPUT:
+  RANDOM_FLIP: "none"
+TEST:
+  EVAL_PERIOD: 1450 #adapt to the number of images to set validation at end of each epochs
+DATASETS:
+  TRAIN: ("name_of_the_train_set",)
+  TRAIN_JSON: "/path/to/train/annotations/annotation.json"
+  TRAIN_IMAGES: "/path/to/train/images/"
+  TEST: ("name_of_the_validation_set",)
+  TEST_JSON: "/path/to/validation/annotations/annotation.json"
+  TEST_IMAGES: "/path/to/validation/images/"
