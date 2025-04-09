@@ -1,7 +1,12 @@
 # Medical Segmentation Architectures
 
-Five deep learning segmentation architectures, initially designed for stroke lesion segmentation. 
-Based on 2D or 3D images.
+Five deep learning segmentation architectures, initially designed for stroke lesion segmentation. It includes U-Net 2D, cGAN, Mask R-CNN, UNETR and U-Net 3D. All scripts, expect for Mask R-CNN which implementation is particular, were used with the versions of the libraries present in `requirements.txt`. They can be installed using
+
+```
+pip install -r requirements.txt
+```
+
+
 
 # Data organization and preprocessings
 
